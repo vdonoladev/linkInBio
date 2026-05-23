@@ -114,7 +114,7 @@ export const pageItems: PageItem[] = [
     enabled: false,
   } satisfies TextBlock,
 
-  { type: "section-header", label: "Mídia e Projetos" } satisfies SectionHeader,
+  { type: "section-header", label: "Projetos" } satisfies SectionHeader,
 
   {
     type: "rich-media",
@@ -122,13 +122,13 @@ export const pageItems: PageItem[] = [
     label: "Latest tutorial",
     url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     description: "How I design landing pages in 30 minutes",
-    enabled: true,
+    enabled: false,
   } satisfies RichMediaItem,
 
   {
     type: "rich-media",
     mediaType: "image-gallery",
-    label: "Portfolio",
+    label: "Portfólio",
     images: [
       { src: "https://picsum.photos/seed/a1/400/400", alt: "Project 1" },
       { src: "https://picsum.photos/seed/b2/400/400", alt: "Project 2" },
@@ -212,7 +212,7 @@ export const pageItems: PageItem[] = [
     enabled: true,
   } satisfies NewsletterInlineItem,
 
-  { type: "section-header", label: "Encontre-me" } satisfies SectionHeader,
+  { type: "section-header", label: "Me encontre" } satisfies SectionHeader,
 
   {
     type: "link",
