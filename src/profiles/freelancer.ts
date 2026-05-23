@@ -20,10 +20,10 @@ export const pageItems: PageItem[] = [
     type: "social-proof",
     proofType: "stats",
     stats: [
-      { label: "Followers", value: "48K+" },
-      { label: "Projects", value: "120+" },
-      { label: "Years XP", value: "9" },
-      { label: "Countries", value: "18" },
+      { label: "Followers", value: "2K+" },
+      { label: "Projects", value: "50+" },
+      { label: "Years XP", value: "11" },
+      { label: "Countries", value: "1" },
     ],
     enabled: true,
   } satisfies SocialProofItem,
@@ -50,7 +50,7 @@ export const pageItems: PageItem[] = [
       { name: "Vercel", icon: "simple-icons:vercel", color: "#000000" },
       { name: "Linear", icon: "simple-icons:linear", color: "#5E6AD2" },
     ],
-    enabled: true,
+    enabled: false,
   } satisfies SocialProofItem,
 
   {
@@ -89,7 +89,7 @@ export const pageItems: PageItem[] = [
       { name: "CSS Design Awards Winner", org: "CSSDA", year: "2023" },
       { name: "Webby Award Honoree", org: "The Webby Awards", year: "2023" },
     ],
-    enabled: true,
+    enabled: false,
   } satisfies SocialProofItem,
 
   { type: "section-header", label: "Text blocks" } satisfies SectionHeader,
@@ -100,7 +100,7 @@ export const pageItems: PageItem[] = [
     label: "New course dropping soon!",
     content:
       "Enroll before June 30 and get 40% off with code <strong>EARLY40</strong>.",
-    enabled: true,
+    enabled: false,
   } satisfies TextBlock,
 
   {
@@ -109,7 +109,7 @@ export const pageItems: PageItem[] = [
     label: "Currently building",
     content:
       "A design system for Latin American startups. If you're interested in collaborating, <a href='mailto:hello@janedoe.com'>reach out</a>.",
-    enabled: true,
+    enabled: false,
   } satisfies TextBlock,
 
   { type: "section-header", label: "Rich media" } satisfies SectionHeader,
@@ -181,7 +181,7 @@ export const pageItems: PageItem[] = [
     features: ["1:1 Video Call", "Actionable Plan", "Recording included"],
     buttonLabel: "Book Session",
     url: "https://calendly.com/janedoe/strategy",
-    enabled: true,
+    enabled: false,
     width: "half",
   } satisfies PriceItem,
 
@@ -194,7 +194,7 @@ export const pageItems: PageItem[] = [
     features: ["Priority Support", "Weekly Syncs", "Unlimited Edits"],
     buttonLabel: "Inquire Now",
     url: "mailto:hello@janedoe.com",
-    enabled: true,
+    enabled: false,
     width: "half",
   } satisfies PriceItem,
 
@@ -222,14 +222,6 @@ export const pageItems: PageItem[] = [
   } satisfies LinkItem,
   {
     type: "link",
-    platform: "tiktok",
-    label: "TikTok",
-    url: "https://tiktok.com/@janedoe",
-    enabled: true,
-    width: "half",
-  } satisfies LinkItem,
-  {
-    type: "link",
     platform: "linkedin",
     label: "LinkedIn",
     url: "https://linkedin.com/in/vdonoladev",
@@ -241,6 +233,14 @@ export const pageItems: PageItem[] = [
     platform: "github",
     label: "GitHub",
     url: "https://github.com/vdonoladev",
+    enabled: true,
+    width: "half",
+  } satisfies LinkItem,
+  {
+    type: "link",
+    platform: "tiktok",
+    label: "TikTok",
+    url: "https://tiktok.com/@vdonola.dev",
     enabled: true,
     width: "half",
   } satisfies LinkItem,
@@ -282,7 +282,7 @@ export const pageItems: PageItem[] = [
     type: "link",
     platform: "email",
     label: "Email me",
-    url: "mailto:hello@janedoe.com",
+    url: "mailto:contato.victordonolaferreira@outlook.com",
     enabled: true,
   } satisfies LinkItem,
 
@@ -295,20 +295,20 @@ export const pageItems: PageItem[] = [
     timezone: "America/Sao_Paulo",
     enabled: true,
   } satisfies UtilityItem,
-  {
-    type: "utility",
-    utilityType: "coupon",
-    label: "Get 20% off",
-    description: "Use at checkout on my Gumroad store",
-    code: "JANEDOE20",
-    enabled: true,
-  } satisfies UtilityItem,
+  // {
+  //   type: "utility",
+  //   utilityType: "coupon",
+  //   label: "Get 20% off",
+  //   description: "Use at checkout on my Gumroad store",
+  //   code: "JANEDOE20",
+  //   enabled: true,
+  // } satisfies UtilityItem,
   {
     type: "utility",
     utilityType: "map",
     label: "Find me here",
     address: "Petrópolis, Brazil",
-    mapUrl: "https://maps.google.com/?q=Santiago,Chile",
+    mapUrl: "https://maps.google.com/?q=Petrópolis,Brazil",
     enabled: true,
   } satisfies UtilityItem,
   {
