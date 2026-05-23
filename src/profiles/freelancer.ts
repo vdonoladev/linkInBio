@@ -275,9 +275,9 @@ export const pageItems: PageItem[] = [
 
   {
     type: "link",
-    platform: "buymeacoffee",
+    platform: "kofi",
     label: "Buy me a Coffee ☕",
-    url: "https://buymeacoffee.com/vdonoladev",
+    url: "https://ko-fi.com/vdonoladev",
     highlight: true,
     enabled: true,
   } satisfies LinkItem,
