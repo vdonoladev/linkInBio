@@ -10,22 +10,22 @@ export { pageItems } from "./profiles/freelancer";
 // SITE CONFIG
 // ─────────────────────────────────────────────────────────────────────────────
 export const siteConfig: SiteConfig = {
-
   // ── Identity ────────────────────────────────────────────────────────────────
   // Who this page belongs to. Used in the profile header, SEO, and schema.org.
   identity: {
-    type: "person",                    // "person" | "organization"
-    name: "Jane Doe",
-    handle: "@janedoe",
+    type: "person", // "person" | "organization"
+    name: "Víctor Donola Ferreira",
+    handle: "@vdonoladev",
     bio: "Designer, developer & coffee enthusiast ☕",
-    bioExtended: "",                   // Optional second line shown below the main bio
+    bioExtended: "", // Optional second line shown below the main bio
     avatar: "https://i.pravatar.cc/192?img=47",
-    avatarAlt: "Photo of Jane Doe",
-    banner: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    location: "Santiago, Chile 🇨🇱",
-    pronouns: "she/her",
-    timezone: "America/Santiago",
-    verificationLinks: [],             // Mastodon / Fediverse rel="me" URLs
+    avatarAlt: "Photo of Víctor",
+    banner:
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    location: "Petrópolis, RJ 🇧🇷",
+    pronouns: "he/him",
+    timezone: "America/Sao_Paulo",
+    verificationLinks: [], // Mastodon / Fediverse rel="me" URLs
   },
 
   // ── Site URL ─────────────────────────────────────────────────────────────────
@@ -34,13 +34,13 @@ export const siteConfig: SiteConfig = {
   // ── Promo Banner ─────────────────────────────────────────────────────────────
   // Top-of-page announcement strip. Set enabled: false to hide it completely.
   promo: {
-    enabled: true,
+    enabled: false,
     message: "✨ Built with Zutrabio — the link-in-bio Astro theme.",
     cta: {
       label: "Get it free →",
-      url:   "https://zutra.gumroad.com/l/zutrabio",
+      url: "https://zutra.gumroad.com/l/zutrabio",
     },
-    dismissible: true,                 // Let visitors close the banner
+    dismissible: true, // Let visitors close the banner
   },
 
   // ── Theme ────────────────────────────────────────────────────────────────────
@@ -71,42 +71,43 @@ export const siteConfig: SiteConfig = {
   // ── Analytics ────────────────────────────────────────────────────────────────
   // Leave values empty ("") to disable a provider.
   analytics: {
-    gtmId:           "",              // Google Tag Manager  e.g. "GTM-XXXXXXX"
-    cloudflareBeacon:"",              // Cloudflare Web Analytics token
-    umamiWebsiteId:  "",              // Umami website ID
-    umamiSrc:        "https://analytics.umami.is/script.js",
-    plausibleDomain: "",              // e.g. "janedoe.com"
-    plausibleSrc:    "https://plausible.io/js/script.js",
-    fathomSiteId:    "",              // e.g. "ABCDEFGH"
+    gtmId: "", // Google Tag Manager  e.g. "GTM-XXXXXXX"
+    cloudflareBeacon: "", // Cloudflare Web Analytics token
+    umamiWebsiteId: "", // Umami website ID
+    umamiSrc: "https://analytics.umami.is/script.js",
+    plausibleDomain: "", // e.g. "janedoe.com"
+    plausibleSrc: "https://plausible.io/js/script.js",
+    fathomSiteId: "", // e.g. "ABCDEFGH"
   },
 
   // ── SEO ──────────────────────────────────────────────────────────────────────
   seo: {
-    title:         "Jane Doe — Designer & Developer",
+    title: "Víctor — Designer & Developer",
     titleTemplate: "%s | Jane Doe",
-    description:   "Designer, developer & coffee enthusiast based in Santiago, Chile.",
-    keywords:      ["designer", "developer", "chile", "jane doe"],
-    canonical:     "",                // Override canonical URL (leave empty to auto-generate)
-    robots:        "index, follow",
+    description:
+      "Designer, developer & coffee enthusiast based in Santiago, Chile.",
+    keywords: ["designer", "developer", "chile", "jane doe"],
+    canonical: "", // Override canonical URL (leave empty to auto-generate)
+    robots: "index, follow",
     excludeFromSitemap: [],
-    alternateLanguages: [],           // [{ lang: "es", url: "https://..." }]
+    alternateLanguages: [], // [{ lang: "es", url: "https://..." }]
   },
 
   // ── Open Graph ───────────────────────────────────────────────────────────────
   openGraph: {
-    image:       "/og/og-default.svg",
-    imageWidth:  1200,
+    image: "/og/og-default.svg",
+    imageWidth: 1200,
     imageHeight: 630,
-    imageAlt:    "Jane Doe — Designer & Developer",
-    locale:      "en_US",
-    type:        "profile",
+    imageAlt: "Jane Doe — Designer & Developer",
+    locale: "en_US",
+    type: "profile",
   },
 
   // ── Twitter / X Card ─────────────────────────────────────────────────────────
   twitter: {
-    card:    "summary_large_image",
+    card: "summary_large_image",
     creator: "@janedoe",
-    site:    "@janedoe",
+    site: "@janedoe",
   },
 
   // ── Schema.org ───────────────────────────────────────────────────────────────
@@ -114,53 +115,53 @@ export const siteConfig: SiteConfig = {
   schema: {
     enabled: true,
     person: {
-      name:       "",
-      jobTitle:   "Designer & Developer",
-      worksFor:   "",
+      name: "",
+      jobTitle: "Designer & Developer",
+      worksFor: "",
       knowsAbout: ["Web Design", "Front-end Development", "UX"],
-      alumniOf:   "",
-      award:      "",
+      alumniOf: "",
+      award: "",
       sameAs: [
-        "https://twitter.com/janedoe",
-        "https://github.com/janedoe",
-        "https://linkedin.com/in/janedoe",
+        "https://twitter.com/donoladev",
+        "https://github.com/vdonoladev",
+        "https://linkedin.com/in/vdonoladev",
       ],
     },
     organization: {
-      legalName:         "",
-      foundingDate:      "",
+      legalName: "",
+      foundingDate: "",
       numberOfEmployees: 0,
-      logo:              "",
-      sameAs:            [],
+      logo: "",
+      sameAs: [],
     },
   },
 
   // ── Geo Meta ─────────────────────────────────────────────────────────────────
   // Only needed for local businesses / physical locations.
   geo: {
-    enabled:   false,
-    region:    "CL-RM",
+    enabled: false,
+    region: "CL-RM",
     placename: "Santiago, Chile",
-    latitude:  -33.4489,
+    latitude: -33.4489,
     longitude: -70.6693,
-    icbm:      "-33.4489, -70.6693",
+    icbm: "-33.4489, -70.6693",
   },
 
   // ── Features ─────────────────────────────────────────────────────────────────
   features: {
-    showPoweredBy:  true,   // "Powered by Zutrabio" in the footer
-    showLastUpdated: true,  // Last-updated timestamp in the footer
-    showLinkCount:  false,  // Badge showing total number of links
-    animateCards:   true,   // Fade-in animation on cards
-    avatarRing:     true,   // Accent ring around the avatar
-    skeletonLoading: true,  // Skeleton placeholders while media loads
-    showCopyLink:   true,   // Copy-profile-URL button in the header
+    showPoweredBy: true, // "Powered by Zutrabio" in the footer
+    showLastUpdated: true, // Last-updated timestamp in the footer
+    showLinkCount: false, // Badge showing total number of links
+    animateCards: true, // Fade-in animation on cards
+    avatarRing: true, // Accent ring around the avatar
+    skeletonLoading: true, // Skeleton placeholders while media loads
+    showCopyLink: true, // Copy-profile-URL button in the header
   },
 
   // ── Footer ───────────────────────────────────────────────────────────────────
   footer: {
-    copyright: "",          // e.g. "© 2025 Jane Doe. All rights reserved."
-    links: [],              // [{ label: "Privacy", href: "/privacy" }]
+    copyright: "", // e.g. "© 2025 Jane Doe. All rights reserved."
+    links: [], // [{ label: "Privacy", href: "/privacy" }]
   },
 
   // ── Exit-Intent Popup ────────────────────────────────────────────────────────
@@ -168,18 +169,20 @@ export const siteConfig: SiteConfig = {
   // Armed after `armDelay` ms so it doesn't fire immediately on page load.
   // Set enabled: false to disable.
   exitIntent: {
-    enabled: true,
+    enabled: false,
     armDelay: 3000,
-    bgImage: "https://images.unsplash.com/photo-1558591710-4b4a1ae0f664?w=1200&q=80",
+    bgImage:
+      "https://images.unsplash.com/photo-1558591710-4b4a1ae0f664?w=1200&q=80",
     title: "Before you go…",
-    subtitle: "Zutrabio is free and open-source. If you like it, check out our other Astro themes and free resources for creators.",
+    subtitle:
+      "Zutrabio is free and open-source. If you like it, check out our other Astro themes and free resources for creators.",
     cta: {
       label: "Browse Free Resources →",
-      url:   "https://zutra.agency/recursos",
+      url: "https://zutra.agency/recursos",
     },
     secondaryCta: {
       label: "More Astro Themes",
-      url:   "https://astro.build/themes/author/2995",
+      url: "https://astro.build/themes/author/2995",
     },
   },
 
@@ -188,12 +191,12 @@ export const siteConfig: SiteConfig = {
   // Set enabled: false to disable.
   slideInCard: {
     enabled: true,
-    delay:   7000,
-    side:    "right",
+    delay: 7000,
+    side: "right",
     message: "Like what you see? We have other projects you might love. ✨",
     cta: {
       label: "See them here",
-      url:   "https://astro.build/themes/author/2995",
+      url: "https://astro.build/themes/author/2995",
     },
   },
 
@@ -202,8 +205,8 @@ export const siteConfig: SiteConfig = {
   // Set enabled: false to hide it completely.
   floatingCta: {
     enabled: true,
-    label:   "Let's Talk",
-    icon:    "lucide:message-circle",
-    href:    "mailto:hello@yourdomain.com",
+    label: "Let's Talk",
+    icon: "lucide:message-circle",
+    href: "mailto:hello@yourdomain.com",
   },
 };
