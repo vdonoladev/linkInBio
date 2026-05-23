@@ -82,9 +82,10 @@ export const siteConfig: SiteConfig = {
 
   // ── SEO ──────────────────────────────────────────────────────────────────────
   seo: {
-    title: "Víctor — Developer",
+    title: "Víctor — Desenvolvedor",
     titleTemplate: "%s | Víctor",
-    description: "Developer & coffee enthusiast based in Petrópolis, Brazil.",
+    description:
+      "Desenvolvedor e entusiasta de café, residente em Petrópolis, Brasil.",
     keywords: ["IT", "developer", "brazil", "vdonoladev"],
     canonical: "", // Override canonical URL (leave empty to auto-generate)
     robots: "index, follow",
