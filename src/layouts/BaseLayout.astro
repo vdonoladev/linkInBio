@@ -27,9 +27,10 @@ const {
   canonical,
 } = Astro.props;
 
-const resolvedTitle = title === siteConfig.seo.title
-  ? title
-  : siteConfig.seo.titleTemplate.replace("%s", title);
+const resolvedTitle =
+  title === siteConfig.seo.title
+    ? title
+    : siteConfig.seo.titleTemplate.replace("%s", title);
 
 const canonicalUrl = canonical
   ? canonical
@@ -52,16 +53,19 @@ const { siteUrl, identity, openGraph, twitter, geo, seo } = siteConfig;
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- ── Favicon ── -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#6c47ff" />
 
     <!-- ── Primary Meta ── -->
     <title>{resolvedTitle}</title>
     <meta name="description" content={description} />
-    {seo.keywords.length > 0 && (
-      <meta name="keywords" content={seo.keywords.join(", ")} />
-    )}
+    {
+      seo.keywords.length > 0 && (
+        <meta name="keywords" content={seo.keywords.join(", ")} />
+      )
+    }
     <meta name="robots" content={robots} />
     <meta name="author" content={identity.name} />
     <link rel="canonical" href={canonicalUrl} />
@@ -88,31 +92,42 @@ const { siteUrl, identity, openGraph, twitter, geo, seo } = siteConfig;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageAbsolute} />
     <meta name="twitter:image:alt" content={openGraph.imageAlt} />
-    {twitter.creator && <meta name="twitter:creator" content={twitter.creator} />}
+    {
+      twitter.creator && (
+        <meta name="twitter:creator" content={twitter.creator} />
+      )
+    }
     {twitter.site && <meta name="twitter:site" content={twitter.site} />}
 
     <!-- ── GEO Meta ── -->
-    {geo.enabled && (
-      <>
-        <meta name="geo.region" content={geo.region} />
-        <meta name="geo.placename" content={geo.placename} />
-        <meta name="geo.position" content={`${geo.latitude};${geo.longitude}`} />
-        <meta name="ICBM" content={geo.icbm} />
-      </>
-    )}
+    {
+      geo.enabled && (
+        <>
+          <meta name="geo.region" content={geo.region} />
+          <meta name="geo.placename" content={geo.placename} />
+          <meta
+            name="geo.position"
+            content={`${geo.latitude};${geo.longitude}`}
+          />
+          <meta name="ICBM" content={geo.icbm} />
+        </>
+      )
+    }
 
     <!-- ── Alternate Languages (hreflang) ── -->
-    {seo.alternateLanguages.map(({ lang, url }) => (
-      <link rel="alternate" hreflang={lang} href={url} />
-    ))}
-    {seo.alternateLanguages.length > 0 && (
-      <link rel="alternate" hreflang="x-default" href={siteUrl} />
-    )}
+    {
+      seo.alternateLanguages.map(({ lang, url }) => (
+        <link rel="alternate" hreflang={lang} href={url} />
+      ))
+    }
+    {
+      seo.alternateLanguages.length > 0 && (
+        <link rel="alternate" hreflang="x-default" href={siteUrl} />
+      )
+    }
 
     <!-- ── Fediverse / Mastodon Verification ── -->
-    {identity.verificationLinks.map((url) => (
-      <link rel="me" href={url} />
-    ))}
+    {identity.verificationLinks.map((url) => <link rel="me" href={url} />)}
 
     <!-- ── Preconnect + Google Fonts ── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -138,7 +153,6 @@ const { siteUrl, identity, openGraph, twitter, geo, seo } = siteConfig;
 
     <!-- ── Theme initialization (must be inline to avoid FOUC) ── -->
     <ThemeScript />
-
   </head>
   <body class="min-h-screen antialiased">
     <!-- GTM noscript fallback -->
@@ -150,12 +164,14 @@ const { siteUrl, identity, openGraph, twitter, geo, seo } = siteConfig;
     <ExitIntentPopup />
     <SlideInCard />
 
-    {siteConfig.floatingCta?.enabled && (
-      <FloatingAction
-        label={siteConfig.floatingCta.label}
-        icon={siteConfig.floatingCta.icon}
-        href={siteConfig.floatingCta.href}
-      />
-    )}
+    {
+      siteConfig.floatingCta?.enabled && (
+        <FloatingAction
+          label={siteConfig.floatingCta.label}
+          icon={siteConfig.floatingCta.icon}
+          href={siteConfig.floatingCta.href}
+        />
+      )
+    }
   </body>
 </html>
