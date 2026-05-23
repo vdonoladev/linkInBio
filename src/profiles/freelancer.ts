@@ -53,10 +53,12 @@ export const pageItems: PageItem[] = [
     enabled: false,
   } satisfies SocialProofItem,
 
+  { type: "section-header", label: "Certificações" } satisfies SectionHeader,
+
   {
     type: "social-proof",
     proofType: "badges",
-    label: "Certificações",
+    // label: "Certificações",
     badges: [
       {
         name: "Google UX Design",
