@@ -61,10 +61,10 @@ export const pageItems: PageItem[] = [
     // label: "Certificações",
     badges: [
       {
-        name: "Google UX Design",
+        name: "Project Managementn",
         icon: "simple-icons:google",
         color: "#4285F4",
-        url: "https://grow.google/certificates/ux-design/",
+        url: "https://grow.google/certificates/project-management/",
       },
       {
         name: "AWS Solutions Architect",
@@ -73,10 +73,10 @@ export const pageItems: PageItem[] = [
         url: "https://aws.amazon.com/certification/",
       },
       {
-        name: "Figma Expert",
-        icon: "simple-icons:figma",
-        color: "#F24E1E",
-        url: "https://figma.com",
+        name: "IT Support",
+        icon: "simple-icons:google",
+        color: "#4285F4",
+        url: "https://grow.google/certificates/it-support/",
       },
     ],
     enabled: true,
@@ -148,25 +148,26 @@ export const pageItems: PageItem[] = [
     label: "Experiências",
     items: [
       {
-        date: "2022 — Present",
-        title: "Senior Product Designer at Artifices",
+        date: "2026 — Presente",
+        title: "Desenvolvedor Web",
         description:
-          "Leading the design system team and UX for the core platform.",
+          "Focado no desenvolvimento de sitemas web, gestão de infraestrutura e projetos pessoais.",
         icon: "lucide:briefcase",
       },
       {
-        date: "2019 — 2022",
-        title: "Fullstack Developer at CreativeFlow",
+        date: "2024 — 2026",
+        title: "Instrutor de Tecnologia",
         description:
-          "Developed high-traffic client websites using Astro and React.",
+          "Criação de materiais institucionais, workshops de IA e desenvolvimento de sistemas integrados.",
         icon: "lucide:code",
       },
       {
-        date: "2017 — 2019",
-        title: "UI Designer at DigitalPulse",
+        date: "2014 — Presente",
+        title:
+          "Graduando em Análise e Desenvolvimento de Sistemas / Administração",
         description:
-          "Started my career focusing on mobile app interfaces and branding.",
-        icon: "lucide:palette",
+          "Formação dupla focada em arquitetura de software, lógica e gestão empresarial.",
+        icon: "lucide:school",
       },
     ],
     enabled: true,
