@@ -212,7 +212,7 @@ export const pageItems: PageItem[] = [
     enabled: true,
   } satisfies NewsletterInlineItem,
 
-  { type: "section-header", label: "Me encontre" } satisfies SectionHeader,
+  { type: "section-header", label: "Redes Sociais" } satisfies SectionHeader,
 
   {
     type: "link",
@@ -267,7 +267,7 @@ export const pageItems: PageItem[] = [
   {
     type: "link",
     platform: "calendly",
-    label: "Book a Call",
+    label: "Agende uma chamada",
     url: "https://calendly.com/vdonoladev",
     highlight: true,
     enabled: true,
@@ -275,8 +275,26 @@ export const pageItems: PageItem[] = [
   {
     type: "link",
     platform: "email",
-    label: "Email me",
+    label: "Envie-me um e-mail",
     url: "mailto:contato.victordonolaferreira@outlook.com",
+    enabled: true,
+  } satisfies LinkItem,
+
+  { type: "section-header", label: "Indicações" } satisfies SectionHeader,
+
+  {
+    type: "link",
+    platform: "youtube",
+    label: "Playlists do YouTube",
+    url: "https://www.youtube.com/@vdonoladev/playlists",
+    enabled: true,
+  } satisfies LinkItem,
+
+  {
+    type: "link",
+    platform: "spotify",
+    label: "Playlists do Spotify",
+    url: "https://open.spotify.com/user/31ij337hse5e7wi5omfqslrd6j7e/playlists",
     enabled: true,
   } satisfies LinkItem,
 
