@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
     handle: "@vdonoladev",
     bio: "Designer, developer & coffee enthusiast ☕",
     bioExtended: "", // Optional second line shown below the main bio
-    avatar: "https://i.pravatar.cc/192?img=47",
+    avatar: "https://github.com/vdonoladev.png",
     avatarAlt: "Photo of Víctor",
     banner:
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
@@ -106,8 +106,8 @@ export const siteConfig: SiteConfig = {
   // ── Twitter / X Card ─────────────────────────────────────────────────────────
   twitter: {
     card: "summary_large_image",
-    creator: "@janedoe",
-    site: "@janedoe",
+    creator: "@donoladev",
+    site: "@donoladev",
   },
 
   // ── Schema.org ───────────────────────────────────────────────────────────────
