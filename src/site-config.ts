@@ -189,7 +189,7 @@ export const siteConfig: SiteConfig = {
   // Small toast-style card that slides in from the bottom corner after `delay` ms.
   // Set enabled: false to disable.
   slideInCard: {
-    enabled: true,
+    enabled: false,
     delay: 7000,
     side: "right",
     message:

@@ -114,7 +114,7 @@ export const pageItems: PageItem[] = [
     enabled: false,
   } satisfies TextBlock,
 
-  { type: "section-header", label: "Projetos" } satisfies SectionHeader,
+  // { type: "section-header", label: "Projetos" } satisfies SectionHeader,
 
   {
     type: "rich-media",
@@ -138,7 +138,7 @@ export const pageItems: PageItem[] = [
       { src: "https://picsum.photos/seed/f6/400/400", alt: "Project 6" },
     ],
     description: "Selected work — 2022–2024",
-    enabled: true,
+    enabled: false,
   } satisfies RichMediaItem,
 
   { type: "section-header", label: "Minha Jornada" } satisfies SectionHeader,
