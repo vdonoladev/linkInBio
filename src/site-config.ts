@@ -149,13 +149,13 @@ export const siteConfig: SiteConfig = {
 
   // ── Features ─────────────────────────────────────────────────────────────────
   features: {
-    showPoweredBy: true, // "Powered by Zutrabio" in the footer
+    showPoweredBy: false, // "Powered by Zutrabio" in the footer
     showLastUpdated: true, // Last-updated timestamp in the footer
     showLinkCount: false, // Badge showing total number of links
     animateCards: true, // Fade-in animation on cards
     avatarRing: true, // Accent ring around the avatar
     skeletonLoading: true, // Skeleton placeholders while media loads
-    showCopyLink: true, // Copy-profile-URL button in the header
+    showCopyLink: false, // Copy-profile-URL button in the header
   },
 
   // ── Footer ───────────────────────────────────────────────────────────────────
@@ -193,10 +193,10 @@ export const siteConfig: SiteConfig = {
     enabled: true,
     delay: 7000,
     side: "right",
-    message: "Like what you see? We have other projects you might love. ✨",
+    message: "Like what you see? I have other projects you might love. ✨",
     cta: {
       label: "See them here",
-      url: "https://astro.build/themes/author/2995",
+      url: "https://github.com/vdonoladev/",
     },
   },
 
@@ -207,6 +207,6 @@ export const siteConfig: SiteConfig = {
     enabled: true,
     label: "Let's Talk",
     icon: "lucide:message-circle",
-    href: "mailto:hello@yourdomain.com",
+    href: "mailto:contato.victordonolaferreira@outlook.com",
   },
 };
