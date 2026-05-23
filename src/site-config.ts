@@ -16,7 +16,7 @@ export const siteConfig: SiteConfig = {
     type: "person", // "person" | "organization"
     name: "Víctor Donola Ferreira",
     handle: "@vdonoladev",
-    bio: "Designer, developer & coffee enthusiast ☕",
+    bio: "Desenvolvedor e entusiasta de café ☕",
     bioExtended: "", // Optional second line shown below the main bio
     avatar: "https://github.com/vdonoladev.png",
     avatarAlt: "Photo of Víctor",
@@ -150,7 +150,7 @@ export const siteConfig: SiteConfig = {
   // ── Features ─────────────────────────────────────────────────────────────────
   features: {
     showPoweredBy: false, // "Powered by Zutrabio" in the footer
-    showLastUpdated: true, // Last-updated timestamp in the footer
+    showLastUpdated: false, // Last-updated timestamp in the footer
     showLinkCount: false, // Badge showing total number of links
     animateCards: true, // Fade-in animation on cards
     avatarRing: true, // Accent ring around the avatar
