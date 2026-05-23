@@ -204,11 +204,12 @@ export const pageItems: PageItem[] = [
 
   {
     type: "newsletter-inline",
-    label: "Join the Inner Circle",
-    description: "Weekly design tips and dev resources — every Tuesday.",
+    label: "Junte-se ao Círculo Íntimo",
+    description:
+      "Dicas de desenvolvimento e recursos para desenvolvedores — toda Sexta-feira.",
     placeholder: "your@email.com",
     buttonLabel: "Subscribe",
-    actionUrl: "https://herman.beehiiv.com/subscribe",
+    actionUrl: "https://vdonoladev.substack.com/subscribe",
     enabled: true,
   } satisfies NewsletterInlineItem,
 
