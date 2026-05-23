@@ -246,9 +246,9 @@ export const pageItems: PageItem[] = [
   } satisfies LinkItem,
   {
     type: "link",
-    platform: "dribbble",
-    label: "Dribbble",
-    url: "https://dribbble.com/janedoe",
+    platform: "twitter",
+    label: "Twitter",
+    url: "https://x.com/donoladev",
     enabled: true,
   } satisfies LinkItem,
   {
