@@ -19,7 +19,7 @@ export const siteConfig: SiteConfig = {
     bio: "Desenvolvedor e entusiasta de café ☕",
     bioExtended: "", // Optional second line shown below the main bio
     avatar: "https://github.com/vdonoladev.png",
-    avatarAlt: "Photo of Víctor",
+    avatarAlt: "Foto de Víctor",
     banner:
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
     location: "Petrópolis, RJ 🇧🇷",
@@ -82,11 +82,10 @@ export const siteConfig: SiteConfig = {
 
   // ── SEO ──────────────────────────────────────────────────────────────────────
   seo: {
-    title: "Víctor — Designer & Developer",
-    titleTemplate: "%s | Jane Doe",
-    description:
-      "Designer, developer & coffee enthusiast based in Santiago, Chile.",
-    keywords: ["designer", "developer", "chile", "jane doe"],
+    title: "Víctor — Developer",
+    titleTemplate: "%s | Víctor",
+    description: "Developer & coffee enthusiast based in Petrópolis, Brazil.",
+    keywords: ["IT", "developer", "brazil", "vdonoladev"],
     canonical: "", // Override canonical URL (leave empty to auto-generate)
     robots: "index, follow",
     excludeFromSitemap: [],
@@ -98,8 +97,8 @@ export const siteConfig: SiteConfig = {
     image: "/og/og-default.svg",
     imageWidth: 1200,
     imageHeight: 630,
-    imageAlt: "Jane Doe — Designer & Developer",
-    locale: "en_US",
+    imageAlt: "Víctor — Developer",
+    locale: "pt_BR",
     type: "profile",
   },
 
@@ -116,7 +115,7 @@ export const siteConfig: SiteConfig = {
     enabled: true,
     person: {
       name: "",
-      jobTitle: "Designer & Developer",
+      jobTitle: "Developer",
       worksFor: "",
       knowsAbout: ["Web Design", "Front-end Development", "UX"],
       alumniOf: "",
