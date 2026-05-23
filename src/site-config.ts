@@ -4,7 +4,7 @@ import type { SiteConfig } from "./types/config";
 // PROFILE — change the active profile here
 // Options: freelancer | creator | musician | founder | professional | localbusiness
 // ─────────────────────────────────────────────────────────────────────────────
-export { pageItems } from "./profiles/freelancer";
+export { pageItems } from "./profiles/creator";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // SITE CONFIG
