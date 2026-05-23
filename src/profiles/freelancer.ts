@@ -36,7 +36,7 @@ export const pageItems: PageItem[] = [
     author: "Carlos Méndez",
     authorTitle: "CEO, Acme Corp",
     authorAvatar: "https://i.pravatar.cc/64?img=12",
-    enabled: true,
+    enabled: false,
   } satisfies SocialProofItem,
 
   {
@@ -112,7 +112,7 @@ export const pageItems: PageItem[] = [
     enabled: false,
   } satisfies TextBlock,
 
-  { type: "section-header", label: "Mídia" } satisfies SectionHeader,
+  { type: "section-header", label: "Mídia e Projetos" } satisfies SectionHeader,
 
   {
     type: "rich-media",
@@ -139,7 +139,7 @@ export const pageItems: PageItem[] = [
     enabled: true,
   } satisfies RichMediaItem,
 
-  { type: "section-header", label: "My Journey" } satisfies SectionHeader,
+  { type: "section-header", label: "Minha Jornada" } satisfies SectionHeader,
 
   {
     type: "timeline",
