@@ -29,7 +29,7 @@ export const siteConfig: SiteConfig = {
   },
 
   // ── Site URL ─────────────────────────────────────────────────────────────────
-  siteUrl: "https://janedoe.com",
+  siteUrl: "https://links.vdonoladev.com.br",
 
   // ── Promo Banner ─────────────────────────────────────────────────────────────
   // Top-of-page announcement strip. Set enabled: false to hide it completely.

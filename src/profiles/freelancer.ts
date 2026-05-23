@@ -344,7 +344,7 @@ export const pageItems: PageItem[] = [
     utilityType: "qr-code",
     label: "Escaneie para visitar",
     description: "Compartilhe esta página offline",
-    qrData: "https://janedoe.com",
+    qrData: "https://links.vdonoladev.com.br",
     enabled: true,
   } satisfies UtilityItem,
 ];
