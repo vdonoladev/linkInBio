@@ -14,7 +14,7 @@ import type {
 } from "@/types/config";
 
 export const pageItems: PageItem[] = [
-  { type: "section-header", label: "Social proof" } satisfies SectionHeader,
+  { type: "section-header", label: "Redes Sociais" } satisfies SectionHeader,
 
   {
     type: "social-proof",
@@ -56,7 +56,7 @@ export const pageItems: PageItem[] = [
   {
     type: "social-proof",
     proofType: "badges",
-    label: "Certifications",
+    label: "Certificações",
     badges: [
       {
         name: "Google UX Design",
@@ -112,7 +112,7 @@ export const pageItems: PageItem[] = [
     enabled: false,
   } satisfies TextBlock,
 
-  { type: "section-header", label: "Rich media" } satisfies SectionHeader,
+  { type: "section-header", label: "Mídia" } satisfies SectionHeader,
 
   {
     type: "rich-media",
@@ -143,7 +143,7 @@ export const pageItems: PageItem[] = [
 
   {
     type: "timeline",
-    label: "Experience",
+    label: "Experiências",
     items: [
       {
         date: "2022 — Present",
@@ -170,7 +170,7 @@ export const pageItems: PageItem[] = [
     enabled: true,
   } satisfies TimelineItem,
 
-  { type: "section-header", label: "Work with me" } satisfies SectionHeader,
+  { type: "section-header", label: "Trabalhe comigo" } satisfies SectionHeader,
 
   {
     type: "price",
@@ -198,7 +198,7 @@ export const pageItems: PageItem[] = [
     width: "half",
   } satisfies PriceItem,
 
-  { type: "section-header", label: "Lead gen" } satisfies SectionHeader,
+  { type: "section-header", label: "Newsletter" } satisfies SectionHeader,
 
   {
     type: "newsletter-inline",
@@ -210,7 +210,7 @@ export const pageItems: PageItem[] = [
     enabled: true,
   } satisfies NewsletterInlineItem,
 
-  { type: "section-header", label: "Find me" } satisfies SectionHeader,
+  { type: "section-header", label: "Encontre-me" } satisfies SectionHeader,
 
   {
     type: "link",
@@ -278,7 +278,7 @@ export const pageItems: PageItem[] = [
     enabled: true,
   } satisfies LinkItem,
 
-  { type: "section-header", label: "Utilities" } satisfies SectionHeader,
+  { type: "section-header", label: "Utilidades" } satisfies SectionHeader,
 
   {
     type: "utility",
