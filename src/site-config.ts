@@ -206,7 +206,7 @@ export const siteConfig: SiteConfig = {
   // Set enabled: false to hide it completely.
   floatingCta: {
     enabled: true,
-    label: "Let's Talk",
+    label: "Vamos conversar",
     icon: "lucide:message-circle",
     href: "mailto:contato.victordonolaferreira@outlook.com",
   },
