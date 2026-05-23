@@ -61,7 +61,7 @@ export const pageItems: PageItem[] = [
     // label: "Certificações",
     badges: [
       {
-        name: "Project Managementn",
+        name: "Project Management",
         icon: "simple-icons:google",
         color: "#4285F4",
         url: "https://grow.google/certificates/project-management/",
