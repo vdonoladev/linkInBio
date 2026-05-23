@@ -210,7 +210,7 @@ export const pageItems: PageItem[] = [
     placeholder: "your@email.com",
     buttonLabel: "Inscreva-se",
     actionUrl: "https://vdonoladev.substack.com/subscribe",
-    enabled: true,
+    enabled: false,
   } satisfies NewsletterInlineItem,
 
   { type: "section-header", label: "Redes Sociais" } satisfies SectionHeader,
