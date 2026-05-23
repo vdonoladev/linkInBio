@@ -246,7 +246,7 @@ export const pageItems: PageItem[] = [
   } satisfies LinkItem,
   {
     type: "link",
-    platform: "twitter",
+    platform: "x",
     label: "Twitter",
     url: "https://x.com/donoladev",
     enabled: true,
