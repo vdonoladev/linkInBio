@@ -14,7 +14,7 @@ import type {
 } from "@/types/config";
 
 export const pageItems: PageItem[] = [
-  { type: "section-header", label: "Redes Sociais" } satisfies SectionHeader,
+  // { type: "section-header", label: "Redes Sociais" } satisfies SectionHeader,
 
   {
     type: "social-proof",
