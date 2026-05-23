@@ -324,14 +324,14 @@ export const pageItems: PageItem[] = [
     timezone: "America/Sao_Paulo",
     enabled: true,
   } satisfies UtilityItem,
-  // {
-  //   type: "utility",
-  //   utilityType: "coupon",
-  //   label: "Get 20% off",
-  //   description: "Use at checkout on my Gumroad store",
-  //   code: "JANEDOE20",
-  //   enabled: true,
-  // } satisfies UtilityItem,
+  {
+    type: "utility",
+    utilityType: "coupon",
+    label: "Get 20% off",
+    description: "Use at checkout on my Gumroad store",
+    code: "JANEDOE20",
+    enabled: false,
+  } satisfies UtilityItem,
   {
     type: "utility",
     utilityType: "map",
@@ -345,7 +345,7 @@ export const pageItems: PageItem[] = [
     utilityType: "vcard",
     label: "Salvar meu contato",
     description: "Me adicione aos seus contatos do celular",
-    enabled: true,
+    enabled: false,
   } satisfies UtilityItem,
   {
     type: "utility",
