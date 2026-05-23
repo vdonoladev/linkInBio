@@ -248,6 +248,14 @@ export const pageItems: PageItem[] = [
   } satisfies LinkItem,
   {
     type: "link",
+    platform: "reddit",
+    label: "Reddit",
+    url: "https://www.reddit.com/user/donoladev/",
+    enabled: true,
+    width: "half",
+  } satisfies LinkItem,
+  {
+    type: "link",
     platform: "telegram",
     label: "Telegram",
     url: "https://t.me/vdonoladev",
@@ -260,7 +268,6 @@ export const pageItems: PageItem[] = [
     label: "TikTok",
     url: "https://tiktok.com/@vdonola.dev",
     enabled: true,
-    width: "half",
   } satisfies LinkItem,
 
   { type: "divider", style: "line" } satisfies Divider,
