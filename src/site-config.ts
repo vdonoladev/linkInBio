@@ -193,9 +193,10 @@ export const siteConfig: SiteConfig = {
     enabled: true,
     delay: 7000,
     side: "right",
-    message: "Like what you see? I have other projects you might love. ✨",
+    message:
+      "Gostou do que viu? Tenho outros projetos que você pode adorar. ✨",
     cta: {
-      label: "See them here",
+      label: "Veja-os aqui",
       url: "https://github.com/vdonoladev/",
     },
   },
