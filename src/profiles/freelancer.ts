@@ -20,7 +20,7 @@ export const pageItems: PageItem[] = [
     type: "social-proof",
     proofType: "stats",
     stats: [
-      { label: "Seguidores", value: "2K+" },
+      { label: "Seguidores", value: "4K+" },
       { label: "Projetos", value: "50+" },
       { label: "Anos de experiência", value: "11" },
       // { label: "Países", value: "1" },
