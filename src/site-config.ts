@@ -16,7 +16,7 @@ export const siteConfig: SiteConfig = {
     type: "person", // "person" | "organization"
     name: "Víctor Donola Ferreira",
     handle: "@vdonoladev",
-    bio: "Desenvolvedor e entusiasta de café ☕",
+    bio: "Transformando ideias em sistemas e soluções web completas",
     bioExtended: "", // Optional second line shown below the main bio
     avatar: "https://github.com/vdonoladev.png",
     avatarAlt: "Foto de Víctor",

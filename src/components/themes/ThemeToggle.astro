@@ -80,7 +80,7 @@ if (!theme.showThemeSwitcher) return;
     document.querySelectorAll(".theme-preset-btn").forEach((btn) => {
       btn.setAttribute(
         "aria-pressed",
-        String(btn.getAttribute("data-preset") === preset)
+        String(btn.getAttribute("data-preset") === preset),
       );
     });
   }
@@ -98,7 +98,7 @@ if (!theme.showThemeSwitcher) return;
   document.querySelectorAll(".theme-preset-btn").forEach((btn) => {
     btn.setAttribute(
       "aria-pressed",
-      String(btn.getAttribute("data-preset") === currentTheme)
+      String(btn.getAttribute("data-preset") === currentTheme),
     );
   });
 </script>

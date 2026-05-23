@@ -8,9 +8,19 @@ if (!theme.showThemeSwitcher) return;
 
 <div class="fts" id="fts" aria-label="Theme controls" role="toolbar">
   <!-- Trigger pill -->
-  <button class="fts__trigger" id="fts-trigger" aria-expanded="false" aria-label="Open theme switcher">
-    <Icon name="lucide:palette" width="16" height="16" class="fts__trigger-icon" />
-    <span class="fts__trigger-label">Themes</span>
+  <button
+    class="fts__trigger"
+    id="fts-trigger"
+    aria-expanded="false"
+    aria-label="Open theme switcher"
+  >
+    <Icon
+      name="lucide:palette"
+      width="16"
+      height="16"
+      class="fts__trigger-icon"
+    />
+    <span class="fts__trigger-label">Temas</span>
   </button>
 
   <!-- Panel -->
@@ -19,37 +29,65 @@ if (!theme.showThemeSwitcher) return;
     <div class="fts__section">
       <span class="fts__section-label">Appearance</span>
       <div class="fts__row">
-        <button class="fts__mode-btn fts__mode-btn--light" data-mode="light" aria-label="Light mode" title="Light mode">
+        <button
+          class="fts__mode-btn fts__mode-btn--light"
+          data-mode="light"
+          aria-label="Light mode"
+          title="Light mode"
+        >
           <Icon name="lucide:sun" width="14" height="14" />
           <span>Light</span>
         </button>
-        <button class="fts__mode-btn fts__mode-btn--dark" data-mode="dark" aria-label="Dark mode" title="Dark mode">
+        <button
+          class="fts__mode-btn fts__mode-btn--dark"
+          data-mode="dark"
+          aria-label="Dark mode"
+          title="Dark mode"
+        >
           <Icon name="lucide:moon" width="14" height="14" />
           <span>Dark</span>
         </button>
-        <button class="fts__mode-btn fts__mode-btn--system" data-mode="system" aria-label="System preference" title="System preference">
+        <button
+          class="fts__mode-btn fts__mode-btn--system"
+          data-mode="system"
+          aria-label="System preference"
+          title="System preference"
+        >
           <Icon name="lucide:monitor" width="14" height="14" />
           <span>Auto</span>
         </button>
       </div>
     </div>
 
-    <div class="fts__divider" />
+    <div class="fts__divider"></div>
 
     <!-- Section: theme preset -->
     <div class="fts__section">
       <span class="fts__section-label">Style</span>
       <div class="fts__themes">
-        <button class="fts__theme-btn" data-preset="minimal" title="Minimal — clean, editorial">
-          <span class="fts__theme-swatch fts__theme-swatch--minimal" />
+        <button
+          class="fts__theme-btn"
+          data-preset="minimal"
+          title="Minimal — clean, editorial"
+        >
+          <span class="fts__theme-swatch fts__theme-swatch--minimal"></span>
           <span class="fts__theme-name">Minimal</span>
         </button>
-        <button class="fts__theme-btn" data-preset="modern" title="Modern — glassmorphism, vivid">
-          <span class="fts__theme-swatch fts__theme-swatch--modern" />
+        <button
+          class="fts__theme-btn"
+          data-preset="modern"
+          title="Modern — glassmorphism, vivid"
+        >
+          <span class="fts__theme-swatch fts__theme-swatch--modern"></span>
           <span class="fts__theme-name">Modern</span>
         </button>
-        <button class="fts__theme-btn" data-preset="neobrutalist" title="Neobrutalist — bold, raw">
-          <span class="fts__theme-swatch fts__theme-swatch--neobrutalist" />
+        <button
+          class="fts__theme-btn"
+          data-preset="neobrutalist"
+          title="Neobrutalist — bold, raw"
+        >
+          <span class="fts__theme-swatch fts__theme-swatch--neobrutalist"
+          ></span>
           <span class="fts__theme-name">Neo</span>
         </button>
       </div>
@@ -63,8 +101,8 @@ if (!theme.showThemeSwitcher) return;
   const html = document.documentElement;
 
   const trigger = document.getElementById("fts-trigger");
-  const panel   = document.getElementById("fts-panel");
-  const fts     = document.getElementById("fts");
+  const panel = document.getElementById("fts-panel");
+  const fts = document.getElementById("fts");
 
   // ── Toggle panel ────────────────────────────────────────────
   function openPanel() {
@@ -94,7 +132,9 @@ if (!theme.showThemeSwitcher) return;
 
   // ── Color mode ───────────────────────────────────────────────
   function applyColorMode(mode: string) {
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+    ).matches;
     const isDark = mode === "dark" || (mode === "system" && prefersDark);
     html.classList.toggle("dark", isDark);
     html.setAttribute("data-color-mode", isDark ? "dark" : "light");
@@ -104,7 +144,10 @@ if (!theme.showThemeSwitcher) return;
 
   function updateModeButtons(mode: string) {
     document.querySelectorAll(".fts__mode-btn").forEach((btn) => {
-      btn.setAttribute("aria-pressed", String(btn.getAttribute("data-mode") === mode));
+      btn.setAttribute(
+        "aria-pressed",
+        String(btn.getAttribute("data-mode") === mode),
+      );
     });
   }
 
@@ -126,7 +169,10 @@ if (!theme.showThemeSwitcher) return;
 
   function updateThemeButtons(preset: string) {
     document.querySelectorAll(".fts__theme-btn").forEach((btn) => {
-      btn.setAttribute("aria-pressed", String(btn.getAttribute("data-preset") === preset));
+      btn.setAttribute(
+        "aria-pressed",
+        String(btn.getAttribute("data-preset") === preset),
+      );
     });
   }
 
@@ -139,7 +185,7 @@ if (!theme.showThemeSwitcher) return;
 
   // ── Init ────────────────────────────────────────────────────
   const currentTheme = html.getAttribute("data-theme") || "minimal";
-  const currentMode  = localStorage.getItem(COLOR_KEY) || "system";
+  const currentMode = localStorage.getItem(COLOR_KEY) || "system";
   updateThemeButtons(currentTheme);
   updateModeButtons(currentMode);
 </script>
@@ -183,10 +229,15 @@ if (!theme.showThemeSwitcher) return;
     color: var(--text-muted);
     font-size: 0.8125rem;
     font-weight: 600;
-    box-shadow: var(--shadow), 0 2px 12px rgba(0,0,0,0.08);
+    box-shadow:
+      var(--shadow),
+      0 2px 12px rgba(0, 0, 0, 0.08);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-    transition: border-color var(--transition), color var(--transition), box-shadow var(--transition);
+    transition:
+      border-color var(--transition),
+      color var(--transition),
+      box-shadow var(--transition);
     cursor: pointer;
 
     /* Mobile: icon-only square */
@@ -236,7 +287,9 @@ if (!theme.showThemeSwitcher) return;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.14), 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.14),
+      0 2px 8px rgba(0, 0, 0, 0.08);
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     min-width: 190px;
@@ -248,7 +301,9 @@ if (!theme.showThemeSwitcher) return;
     opacity: 0;
     transform: translateY(-6px) scale(0.97);
     pointer-events: none;
-    transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.2,0.8,0.2,1);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
     transform-origin: top right;
   }
 
@@ -297,7 +352,10 @@ if (!theme.showThemeSwitcher) return;
     font-size: 0.6875rem;
     font-weight: 600;
     background: transparent;
-    transition: border-color var(--transition), color var(--transition), background var(--transition);
+    transition:
+      border-color var(--transition),
+      color var(--transition),
+      background var(--transition);
     cursor: pointer;
   }
 
@@ -346,7 +404,10 @@ if (!theme.showThemeSwitcher) return;
     font-weight: 500;
     text-align: left;
     cursor: pointer;
-    transition: border-color var(--transition), color var(--transition), background var(--transition);
+    transition:
+      border-color var(--transition),
+      color var(--transition),
+      background var(--transition);
   }
 
   .fts__theme-btn[aria-pressed="true"] {
@@ -368,12 +429,18 @@ if (!theme.showThemeSwitcher) return;
     height: 1.25rem;
     border-radius: 50%;
     flex-shrink: 0;
-    border: 1.5px solid rgba(0,0,0,0.1);
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
   }
 
-  .fts__theme-swatch--minimal     { background: linear-gradient(135deg, #f7f5f2 50%, #18181b 50%); }
-  .fts__theme-swatch--modern      { background: linear-gradient(135deg, #f0f0ff 50%, #6c47ff 50%); }
-  .fts__theme-swatch--neobrutalist{ background: linear-gradient(135deg, #f5f0e8 50%, #ff6b35 50%); }
+  .fts__theme-swatch--minimal {
+    background: linear-gradient(135deg, #f7f5f2 50%, #18181b 50%);
+  }
+  .fts__theme-swatch--modern {
+    background: linear-gradient(135deg, #f0f0ff 50%, #6c47ff 50%);
+  }
+  .fts__theme-swatch--neobrutalist {
+    background: linear-gradient(135deg, #f5f0e8 50%, #ff6b35 50%);
+  }
 
   .fts__theme-name {
     flex: 1;
@@ -385,7 +452,13 @@ if (!theme.showThemeSwitcher) return;
   }
 
   @keyframes ftsAppear {
-    from { opacity: 0; transform: translateY(12px) scale(0.9); }
-    to   { opacity: 1; transform: translateY(0) scale(1); }
+    from {
+      opacity: 0;
+      transform: translateY(12px) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
   }
 </style>
