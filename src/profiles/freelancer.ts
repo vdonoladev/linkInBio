@@ -208,7 +208,7 @@ export const pageItems: PageItem[] = [
     description:
       "Dicas de desenvolvimento e recursos para desenvolvedores — toda Sexta-feira.",
     placeholder: "your@email.com",
-    buttonLabel: "Subscribe",
+    buttonLabel: "Inscreva-se",
     actionUrl: "https://vdonoladev.substack.com/subscribe",
     enabled: true,
   } satisfies NewsletterInlineItem,
