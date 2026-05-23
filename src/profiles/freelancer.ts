@@ -248,10 +248,19 @@ export const pageItems: PageItem[] = [
   } satisfies LinkItem,
   {
     type: "link",
+    platform: "telegram",
+    label: "Telegram",
+    url: "https://t.me/vdonoladev",
+    enabled: true,
+    width: "half",
+  } satisfies LinkItem,
+  {
+    type: "link",
     platform: "tiktok",
     label: "TikTok",
     url: "https://tiktok.com/@vdonola.dev",
     enabled: true,
+    width: "half",
   } satisfies LinkItem,
 
   { type: "divider", style: "line" } satisfies Divider,
