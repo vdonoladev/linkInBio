@@ -162,7 +162,7 @@ export const pageItems: PageItem[] = [
         icon: "lucide:code",
       },
       {
-        date: "2014 — Presente",
+        date: "2024 — Presente",
         title:
           "Graduando em Análise e Desenvolvimento de Sistemas / Administração",
         description:
