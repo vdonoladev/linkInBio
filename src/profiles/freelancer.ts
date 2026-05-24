@@ -148,14 +148,7 @@ export const pageItems: PageItem[] = [
     label: "Experiências",
     items: [
       {
-        date: "2026 — Presente",
-        title: "Desenvolvedor Web",
-        description:
-          "Focado no desenvolvimento de sitemas web, gestão de infraestrutura e projetos pessoais.",
-        icon: "lucide:briefcase",
-      },
-      {
-        date: "2024 — 2026",
+        date: "2025 — 2026",
         title: "Instrutor de Tecnologia",
         description:
           "Criação de materiais institucionais, workshops de IA e desenvolvimento de sistemas integrados.",
@@ -168,6 +161,13 @@ export const pageItems: PageItem[] = [
         description:
           "Formação dupla focada em arquitetura de software, lógica e gestão empresarial.",
         icon: "lucide:school",
+      },
+      {
+        date: "2021 — Presente",
+        title: "Desenvolvedor Web",
+        description:
+          "Focado no desenvolvimento de sitemas web, gestão de infraestrutura e projetos pessoais.",
+        icon: "lucide:briefcase",
       },
     ],
     enabled: true,
