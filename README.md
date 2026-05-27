@@ -10,13 +10,9 @@
 [![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-Deploy-F38020?style=flat-square&logo=cloudflare&logoColor=white)](https://pages.cloudflare.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](./LICENSE)
 
-<br />
-
 ## 🖼️ Demonstração
 
 ![Demo do projeto](./docs/demo.gif)
-
-<br />
 
 🌐 **[Ver ao vivo →](https://links.vdonoladev.com.br)**
 
