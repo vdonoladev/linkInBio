@@ -295,7 +295,7 @@ export const pageItems: PageItem[] = [
     type: "link",
     platform: "calendly",
     label: "Agende uma chamada",
-    url: "https://calendly.com/vdonoladev",
+    url: "https://calendly.com/vdonoladev/30min",
     highlight: true,
     enabled: true,
   } satisfies LinkItem,
