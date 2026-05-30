@@ -270,6 +270,15 @@ export const pageItems: PageItem[] = [
     label: "TikTok",
     url: "https://tiktok.com/@vdonola.dev",
     enabled: true,
+    width: "half",
+  } satisfies LinkItem,
+    {
+    type: "link",
+    platform: "threads",
+    label: "Threads",
+    url: "https://threads.net/@vdonoladev",
+    enabled: true,
+    width: "half",
   } satisfies LinkItem,
 
   { type: "divider", style: "line" } satisfies Divider,
