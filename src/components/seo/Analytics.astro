@@ -3,9 +3,10 @@
  * Analytics.astro
  * Handles all analytics providers based on site-config.ts.
  * placement="head" → GTM head snippet + others
- * placement="body" → GTM noscript fallback
+ * placement="body" → GTM noscript fallback + Vercel Analytics
  */
 import { siteConfig } from "@/site-config";
+import VercelAnalytics from "@vercel/analytics/astro";
 
 export interface Props {
   placement: "head" | "body";
@@ -99,5 +100,8 @@ const hasFathom = !!analytics.fathomSiteId;
         />
       </noscript>
     )}
+
+    {/* ── Vercel Analytics ── */}
+    <VercelAnalytics />
   </>
 )}

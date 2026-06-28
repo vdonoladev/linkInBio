@@ -6,13 +6,13 @@ const { theme } = siteConfig;
 if (!theme.showThemeSwitcher) return;
 ---
 
-<div class="fts" id="fts" aria-label="Theme controls" role="toolbar">
+<div class="fts" id="fts" aria-label="Controles de tema" role="toolbar">
   <!-- Trigger pill -->
   <button
     class="fts__trigger"
     id="fts-trigger"
     aria-expanded="false"
-    aria-label="Open theme switcher"
+    aria-label="Abrir seletor de tema"
   >
     <Icon
       name="lucide:palette"
@@ -27,31 +27,31 @@ if (!theme.showThemeSwitcher) return;
   <div class="fts__panel" id="fts-panel" aria-hidden="true">
     <!-- Section: color mode -->
     <div class="fts__section">
-      <span class="fts__section-label">Appearance</span>
+      <span class="fts__section-label">Aparência</span>
       <div class="fts__row">
         <button
           class="fts__mode-btn fts__mode-btn--light"
           data-mode="light"
-          aria-label="Light mode"
-          title="Light mode"
+          aria-label="Modo claro"
+          title="Modo claro"
         >
           <Icon name="lucide:sun" width="14" height="14" />
-          <span>Light</span>
+          <span>Claro</span>
         </button>
         <button
           class="fts__mode-btn fts__mode-btn--dark"
           data-mode="dark"
-          aria-label="Dark mode"
-          title="Dark mode"
+          aria-label="Modo escuro"
+          title="Modo escuro"
         >
           <Icon name="lucide:moon" width="14" height="14" />
-          <span>Dark</span>
+          <span>Escuro</span>
         </button>
         <button
           class="fts__mode-btn fts__mode-btn--system"
           data-mode="system"
-          aria-label="System preference"
-          title="System preference"
+          aria-label="Preferência do sistema"
+          title="Preferência do sistema"
         >
           <Icon name="lucide:monitor" width="14" height="14" />
           <span>Auto</span>
@@ -63,28 +63,28 @@ if (!theme.showThemeSwitcher) return;
 
     <!-- Section: theme preset -->
     <div class="fts__section">
-      <span class="fts__section-label">Style</span>
+      <span class="fts__section-label">Estilo</span>
       <div class="fts__themes">
         <button
           class="fts__theme-btn"
           data-preset="minimal"
-          title="Minimal — clean, editorial"
+          title="Minimalista — limpo, editorial"
         >
           <span class="fts__theme-swatch fts__theme-swatch--minimal"></span>
-          <span class="fts__theme-name">Minimal</span>
+          <span class="fts__theme-name">Minimalista</span>
         </button>
         <button
           class="fts__theme-btn"
           data-preset="modern"
-          title="Modern — glassmorphism, vivid"
+          title="Moderno — glassmorphism, vibrante"
         >
           <span class="fts__theme-swatch fts__theme-swatch--modern"></span>
-          <span class="fts__theme-name">Modern</span>
+          <span class="fts__theme-name">Moderno</span>
         </button>
         <button
           class="fts__theme-btn"
           data-preset="neobrutalist"
-          title="Neobrutalist — bold, raw"
+          title="Neobrutalista — ousado, cru"
         >
           <span class="fts__theme-swatch fts__theme-swatch--neobrutalist"
           ></span>
