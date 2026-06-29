@@ -324,6 +324,8 @@ export const pageItems: PageItem[] = [
     enabled: true,
   } satisfies LinkItem,
 
+  { type: "divider", style: "line" } satisfies Divider,
+
   {
     type: "link",
     platform: "custom",
