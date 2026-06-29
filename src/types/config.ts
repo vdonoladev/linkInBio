@@ -323,18 +323,9 @@ export type LeadGenType =
   | "mailchimp";
 
 export type SocialProofType =
-  | "stats"
-  | "testimonial"
-  | "client-logos"
-  | "badges"
-  | "awards";
+  "stats" | "testimonial" | "client-logos" | "badges" | "awards";
 
-export type UtilityType =
-  | "map"
-  | "coupon"
-  | "vcard"
-  | "clock"
-  | "qr-code";
+export type UtilityType = "map" | "coupon" | "vcard" | "clock" | "qr-code";
 
 // ── Item Interfaces ───────────────────────────────────────────
 
@@ -358,6 +349,8 @@ export interface LinkItem extends BaseItem {
   label: string;
   /** Emoji or path to a custom icon (for platform: "custom") */
   icon?: string;
+  /** Override the platform brand color for the icon background */
+  color?: string;
   /** rel attribute (e.g., "me" for Mastodon verification) */
   rel?: string;
   /** Open in new tab? Default: true */
@@ -422,11 +415,29 @@ export interface SocialProofItem extends BaseItem {
   authorTitle?: string;
   authorAvatar?: string;
   /** For client logos */
-  logos?: Array<{ name: string; icon?: string; src?: string; url?: string; color?: string }>;
+  logos?: Array<{
+    name: string;
+    icon?: string;
+    src?: string;
+    url?: string;
+    color?: string;
+  }>;
   /** For badges/certifications */
-  badges?: Array<{ name: string; icon?: string; src?: string; url?: string; color?: string }>;
+  badges?: Array<{
+    name: string;
+    icon?: string;
+    src?: string;
+    url?: string;
+    color?: string;
+  }>;
   /** For awards */
-  awards?: Array<{ name: string; org?: string; year?: string; image?: string; url?: string }>;
+  awards?: Array<{
+    name: string;
+    org?: string;
+    year?: string;
+    image?: string;
+    url?: string;
+  }>;
 }
 
 export interface UtilityItem extends BaseItem {

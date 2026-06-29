@@ -14,10 +14,14 @@ export default defineConfig({
       include: {
         "simple-icons": ["*"],
         lucide: ["*"],
+        mdi: ["*"],
+        tabler: ["*"],
+        ph: ["*"],
       },
     }),
     sitemap({
-      filter: (page) => !siteConfig.seo.excludeFromSitemap.some((p) => page.includes(p)),
+      filter: (page) =>
+        !siteConfig.seo.excludeFromSitemap.some((p) => page.includes(p)),
     }),
   ],
 

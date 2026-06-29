@@ -32,8 +32,9 @@ function hexToRgba(hex: string, alpha: number): string {
   return `rgba(${r},${g},${b},${alpha})`;
 }
 
-const iconBg = hexToRgba(meta.color, 0.12);
-const iconBgHover = hexToRgba(meta.color, 0.22);
+const resolvedColor = item.color ?? meta.color;
+const iconBg = hexToRgba(resolvedColor, 0.12);
+const iconBgHover = hexToRgba(resolvedColor, 0.22);
 ---
 
 <a
@@ -49,7 +50,7 @@ const iconBgHover = hexToRgba(meta.color, 0.22);
   <span
     class="link-card__icon adaptive-icon"
     aria-hidden="true"
-    style={`--icon-bg: ${iconBg}; --icon-bg-hover: ${iconBgHover}; --icon-color: ${meta.color}`}
+    style={`--icon-bg: ${iconBg}; --icon-bg-hover: ${iconBgHover}; --icon-color: ${resolvedColor}`}
   >
     {customEmoji && customEmoji}
     {iconName && <Icon name={iconName} width="18" height="18" />}

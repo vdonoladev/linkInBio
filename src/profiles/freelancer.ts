@@ -14,7 +14,6 @@ import type {
 } from "@/types/config";
 
 export const pageItems: PageItem[] = [
-
   // ── Stats ────────────────────────────────────────────────────────────────
 
   {
@@ -102,6 +101,7 @@ export const pageItems: PageItem[] = [
     platform: "website",
     label: "Portfólio",
     url: "https://vdonoladev.com.br",
+    icon: "tabler:device-desktop-code",
     highlight: true,
     enabled: true,
     width: "half",
@@ -111,6 +111,7 @@ export const pageItems: PageItem[] = [
     platform: "website",
     label: "Site Pessoal",
     url: "https://me.vdonoladev.com.br",
+    icon: "tabler:home",
     enabled: true,
     width: "half",
   } satisfies LinkItem,
@@ -249,7 +250,11 @@ export const pageItems: PageItem[] = [
     price: "R$800",
     period: "mês",
     description: "Suporte técnico contínuo para o seu produto ou equipe.",
-    features: ["Prioridade no atendimento", "Sincronizações semanais", "Revisões ilimitadas"],
+    features: [
+      "Prioridade no atendimento",
+      "Sincronizações semanais",
+      "Revisões ilimitadas",
+    ],
     buttonLabel: "Falar comigo",
     url: "mailto:contato@vdonoladev.com.br",
     enabled: false,
@@ -316,6 +321,26 @@ export const pageItems: PageItem[] = [
     platform: "spotify",
     label: "Playlists do Spotify",
     url: "https://open.spotify.com/user/31ij337hse5e7wi5omfqslrd6j7e/playlists",
+    enabled: true,
+  } satisfies LinkItem,
+
+  {
+    type: "link",
+    platform: "custom",
+    label: "GoodReads",
+    url: "https://www.goodreads.com/vdonoladev",
+    icon: "simple-icons:goodreads",
+    color: "#1E1915",
+    enabled: true,
+  } satisfies LinkItem,
+
+  {
+    type: "link",
+    platform: "custom",
+    label: "The News",
+    url: "https://thenewscc.com.br/?ref=pjl61y4v15",
+    icon: "lucide:newspaper",
+    color: "#FFB946",
     enabled: true,
   } satisfies LinkItem,
 
