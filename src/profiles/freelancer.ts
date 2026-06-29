@@ -91,6 +91,30 @@ export const pageItems: PageItem[] = [
     enabled: true,
   } satisfies SocialProofItem,
 
+  // ── Meus Sites ────────────────────────────────────────────────────────────
+  // Posição estratégica: depois de "quem sou" → antes de "me siga"
+  // Quem chegou até aqui já está interessado — hora de mandar pro trabalho real.
+
+  { type: "section-header", label: "Meus Sites" } satisfies SectionHeader,
+
+  {
+    type: "link",
+    platform: "website",
+    label: "Portfólio",
+    url: "https://vdonoladev.com.br",
+    highlight: true,
+    enabled: true,
+    width: "half",
+  } satisfies LinkItem,
+  {
+    type: "link",
+    platform: "website",
+    label: "Site Pessoal",
+    url: "https://me.vdonoladev.com.br",
+    enabled: true,
+    width: "half",
+  } satisfies LinkItem,
+
   // ── Redes Sociais ─────────────────────────────────────────────────────────
 
   { type: "section-header", label: "Redes Sociais" } satisfies SectionHeader,

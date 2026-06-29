@@ -185,7 +185,7 @@ export const siteConfig: SiteConfig = {
 
   // ── Slide-In Card ─────────────────────────────────────────────────────────────
   slideInCard: {
-    enabled: true,
+    enabled: false,
     delay: 7000,
     side: "right",
     message:
