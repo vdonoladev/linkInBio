@@ -115,6 +115,15 @@ export const pageItems: PageItem[] = [
     enabled: true,
     width: "half",
   } satisfies LinkItem,
+    {
+    type: "link",
+    platform: "website",
+    label: "Projetos",
+    url: "https://projetos.vdonoladev.com.br",
+    icon: "tabler:file-type-html",
+    enabled: true,
+    width: "full",
+  } satisfies LinkItem,
 
   // ── Redes Sociais ─────────────────────────────────────────────────────────
 
