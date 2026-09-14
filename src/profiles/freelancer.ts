@@ -141,7 +141,7 @@ export const pageItems: PageItem[] = [
     type: "link",
     platform: "instagram",
     label: "Instagram",
-    url: "https://instagram.com/vdonoladev",
+    url: "https://instagram.com/v.donoladev",
     enabled: true,
     width: "half",
   } satisfies LinkItem,
