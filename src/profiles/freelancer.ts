@@ -141,7 +141,7 @@ export const pageItems: PageItem[] = [
     type: "link",
     platform: "instagram",
     label: "Instagram",
-    url: "https://instagram.com/v.donoladev",
+    url: "https://instagram.com/vdonoladev",
     enabled: true,
     width: "half",
   } satisfies LinkItem,
@@ -344,6 +344,18 @@ export const pageItems: PageItem[] = [
     color: "#1E1915",
     enabled: true,
   } satisfies LinkItem,
+
+  {
+    type: "link",
+    platform: "custom",
+    label: "Letterboxd",
+    url: "https://letterboxd.com/vdonoladev",
+    icon: "simple-icons:letterboxd",
+    color: "#00C030",
+    enabled: true,
+  } satisfies LinkItem,
+
+  { type: "divider", style: "line" } satisfies Divider,
 
   {
     type: "link",
